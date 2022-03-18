@@ -21,12 +21,17 @@ const btn = document.getElementById('send');
 
 btn.addEventListener('click', () => {
   if(input.value === "" && email.value === "" && text.value === "") {
-      alert('Please the blanks area!!');
+      alert('Please fills the blanks area!!');
   } else if (input.value === "") {
    alert("Please fill out user name before sending");
   } else if (email.value === "") {
     alert("Please fill out user email before sending");
-  } else {
+  } else if (text.value === "") {
     alert("Please fill out message before sending");
-  }  
+  }   else {
+    alert("Message successfully sent");
+  }
+  input.value = "";
+  email.value = "";
+  text.value = "";
 });
