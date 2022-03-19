@@ -30,6 +30,9 @@ btn.addEventListener('click', () => {
     alert("Please fill out message before sending");
   }   else {
     alert("Message successfully sent");
+    input.value = "";
+  email.value = "";
+  text.value = "";
   }
 });
 const clear = document.getElementById('clear');
