@@ -31,6 +31,9 @@ btn.addEventListener('click', () => {
   }   else {
     alert("Message successfully sent");
   }
+});
+const clear = document.getElementById('clear');
+clear.addEventListener('click', () => {
   input.value = "";
   email.value = "";
   text.value = "";
